@@ -32,14 +32,38 @@ body {
     align-items: center;
 }
 
+.socialicons {
+    padding: 10px;
+    margin: 10px;
+}
+
 #mainlogo {
     width: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.logoname {
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.navbar li {
+    cursor: pointer;
 }
 
 .navitems {
@@ -47,6 +71,12 @@ body {
     font-weight: bolder;
     font-size: larger;
     list-style-type: none;
+    border-color: white;
+}
+
+.navbar li:hover {
+    border: 1px solid white;
+    background-color: aqua;
 }
 
 .content {
