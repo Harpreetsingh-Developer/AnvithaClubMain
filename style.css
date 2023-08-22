@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,1,69,1) 48%, rgba(11,0,13,1) 100%);
+    color: white;
+}
+
+.header .headbar {
+    position: relative;
+    width: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lefthead {
+    display: flex;
+    align-items: center;
+}
+
+.righthead {
+    display: flex;
+    align-items: center;
+}
+
+#mainlogo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navitems {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    list-style-type: none;
+}
+
+.content {
+    margin-top: 50px;
+}
