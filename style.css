@@ -90,6 +90,57 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .image-slideshow {
     max-width: 100%;
     position: relative;
@@ -120,22 +171,26 @@ body {
   .gallery {
     padding: 80px;
   }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: 320px 320px;
+    grid-template-rows: 320px;
     gap: 60px;
   }
+
   .grid img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
+
   .box-image {
     position: relative;
     border: 1px solid white;
     padding: 10px;
   }
+  
   .box-hover {
     position: absolute;
     top: 0;
@@ -149,9 +204,11 @@ body {
     align-items: center;
     display: none;
   }
+
   .box-image:hover .box-hover {
     display: flex;
   }
+
   @media screen and (max-width: 996px) {
     .grid img,
     .box-hover {
@@ -173,8 +230,7 @@ body {
 }
 
 h1, h2, h3 {
-    text-align: center;
-    
+    text-align: center; 
 }
 
 p {
@@ -186,3 +242,52 @@ p {
     margin-left: 10px;
     font-style: italic;
 }
+
+/* ===================================================================== */
+
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border-radius: 50%;
+    background-image: url('media/images/anvithalogo.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    
+    /* Animation */
+    
+    animation-name: circle-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+	/* Offset path */
+	
+	  offset-path: path('M150,150 m0,-100 a100,100 0 1,1 0,200 a100,100 0 1,1 0,-200');
+	  offset-distance: calc(50% - (100px / 2));
+	  offset-rotate: auto;
+  }
+  
+   @keyframes circle-move {
+     from {transform:none;}
+     to {transform:rotate(360deg);}
+   }
