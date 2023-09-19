@@ -7,6 +7,8 @@
     <title>Anvitha Club</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -20,7 +22,13 @@
                 <p class="logoname">G.L. Bajaj</p>
 
             </div>
+
             <div class="middlehead">
+                <img class="mainlogo" src="media/images/anvithalogo.png" alt="Anvitha Logo">
+                <p class="logoname">Anvitha Club</p>
+            </div>
+
+            <div class="righthead">
                 <!-- Social Media Icon -->
                 <div class="socialicons">
 
@@ -34,22 +42,22 @@
                             name='twitter' class="bx-tada-hover"></box-icon></a>
                 </div>
             </div>
-            <div class="righthead">
-                <p class="logoname">Anvitha Club</p>
-                <img class="mainlogo" src="media/images/anvithalogo.png" alt="Anvitha Logo">
-            </div>
         </div>
     </header>
 
     <nav>
         <div class="navbar">
             <li class="navitems">Home</li>
-            <div class="subnav">
-                <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                  <a href="#company">Company</a>
-                  <a href="#team">Team</a>
-                  <a href="#careers">Careers</a>
+            <div class="dropdown">
+                <button class="dropbtn">Teams</button>
+                <div class="dropdown-content">
+                    <a href="#">Cultural </a>
+                    <a href="#">Design and Media</a>
+                    <a href="#">Editorial</a>
+                    <a href="#">Techinal</a>
+                    <a href="#">Managment</a>
+                    <a href="#">Photography</a>
+                    <a href="#">Sports</a>
                 </div>
             </div>
             <li class="navitems">Events</li>
@@ -104,85 +112,104 @@
 
     <section class="anvitha-fullform">
         <div class="circle-container">
-            <div class="word">Aspiring</div>
-            <div class="word">Noble</div>
-            <div class="word">Visualist</div>
-            <div class="word">Ingenuity</div>
-            <div class="word">Tenacity</div>
-            <div class="word">Hardwork</div>
-            <div class="word">Ambitious</div>
-          </div>
-        
-        <!-- ========================================================================================= -->
-
-
-        <br><br><br>
-
-        <h3>OUR OBJECTIVES</h3>
-        <p class="margin">
-            <br>• To provide opportunities for students to learn and grow in their chosen field - This could involve
-            providing access to resources and organizing events.
-            <br><br>• To promote collaboration and teamwork - This could involve working on projects together,
-            organizing social events, or participating in competitions.
-            <br><br>• To develop leadership skills- This could involve giving students opportunities to take on
-            leadership roles, providing training, or offering mentorship.
-            <br><br>• To have fun and make friends- This could involve organizing social events, participating in games,
-            or simply enjoying each other's company.
-        </p>
-        <!-- <li>
-            To provide opportunities for students to learn and grow in their chosen field - This could involve providing
-            access to resources and organizing events.
-        </li>
-        <li>
-            To promote collaboration and teamwork - This could involve working on projects together, organizing social
-            events, or participating in competitions.
-        </li>
-        <li>
-            To develop leadership skills- This could involve giving students opportunities to take on leadership roles,
-            providing training, or offering mentorship.
-        </li>
-        <li>
-            To have fun and make friends- This could involve organizing social events, participating in games, or simply
-            enjoying each other's company.
-        </li> -->
-
-        <br><br><br>
-
-        <h3>WHY JOIN ANVITHA CLUB</h3>
-        <br>
-        <p class="margin">
-            <br>• Diverse Opportunities: No matter your interests, we've got something for you! From academic pursuits
-            to cultural celebrations, community service projects, sports competitions, and everything in between, we
-            curate a diverse range of activities to cater to the unique passions of our members.
-            <br><br>• Personal Growth: College is a time for self-discovery and growth. With Anvitha Club, you'll have
-            access to seminars, and leadership development programs that will enhance your skills and empower you to
-            reach new heights.
-            <br><br>• Forge Lasting Friendships: Building connections is an integral part of the college experience. Our
-            club fosters an environment where you can meet like-minded individuals, make friends for life, and expand
-            your social circle.
-        </p>
-        <!-- <li>
-            Diverse Opportunities: No matter your interests, we've got something for you! From academic pursuits to
-            cultural celebrations, community service projects, sports competitions, and everything in between, we curate
-            a diverse range of activities to cater to the unique passions of our members.
-        </li>
-        <li>
-            Personal Growth: College is a time for self-discovery and growth. With Anvitha Club, you'll have access to
-            seminars, and leadership development programs that will enhance your skills and empower you to reach new
-            heights.
-        </li>
-        <li>
-            Forge Lasting Friendships: Building connections is an integral part of the college experience. Our club
-            fosters an environment where you can meet like-minded individuals, make friends for life, and expand your
-            social circle.
-        </li> -->
+            <div class="word one">Aspiring</div>
+            <div class="word two">Noble</div>
+            <div class="word three">Visualist</div>
+            <div class="word four">Ingenuity</div>
+            <div class="word five">Tenacity</div>
+            <div class="word six">Hardwork</div>
+            <div class="word seven">Ambitious</div>
+        </div>
+        <div class="note">
+            <p>These are the qualities that lies inside all of us.
+                <span>
+                    The name implies a sense of harmony and unification,
+                    suggesting that the individual may possess qualities of bringing people together,
+                    fostering understanding, and building bridges of communication and cooperation.
+                </span>
+            </p>
+        </div>
     </section>
 
-    <footer>
+    <section class="objectives">
+        <h2>Our Objectives</h2>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
 
-    </footer>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>To provide opportunities for students to learn and grow in their chosen field -<br><span
+                            style="font-style:normal;">This could involve providing access to resources and organizing events.</span></h4>
+                </div>
+                <div class="item">
+                    <h4>To promote collaboration and teamwork -<br><span 
+                        style="font-style:normal;">This could involve working on projects together, organizing social events, or participating in competitions.</span></h4>
+                </div>
+                <div class="item">
+                    <h4>To develop leadership skills-<br><span 
+                        style="font-style:normal;">This could involve giving students opportunities to take on leadership roles, providing training, or offering mentorship.</span></h4>
+                </div>
+                <div class="item">
+                    <h4>To have fun and make friends-<br><span 
+                        style="font-style:normal;">This could involve organizing social events, participating in games, or simply enjoying each other's company.</span></h4>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    
+<footer class="bg-gray-900 rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="media/images/anvithalogo.png" class="h-8 mr-3" alt="Anvitha Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Anvitha Club</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Events</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
 </body>
 <script src="main.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 </html>
